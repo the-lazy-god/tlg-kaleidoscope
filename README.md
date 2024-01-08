@@ -85,7 +85,7 @@ Default is 1. Larger number will increase the size of each image tile.
 
 Control the intensity of the motion effect based on mouse movement by adding the `tlg-kaleidoscope-motion` attribute to the container with attribute `tlg-kaleidoscope-canvas`. 
 
-Default is 1. Larger number will increase motion intensity. Set the value to 0 to disable motion completely.
+Default is 1. Larger number will increase motion intensity.
 
 **Attribute (Optional):**
 
