@@ -33,9 +33,9 @@ Within each canvas container, include one or more image elements with the attrib
 
 -   Name: `tlg-kaleidoscope-image`
 
-## 🌟 Interaction Customization
+## 🌟 Animation mode
 
-### Choose the interaction mode
+### Choose the animation mode
 
 Set the interaction mode of the kaleidoscope by adding the `tlg-kaleidoscope-mode` attribute to the container with attribute `tlg-kaleidoscope-canvas`. Options are "mouse", "static", "loop", and "scroll".
 
@@ -83,7 +83,7 @@ Default is 1. Larger number will increase the size of each image tile.
 
 ### Set level of motion
 
-Control the intensity of the motion effect based on mouse movement by adding the `tlg-kaleidoscope-motion` attribute to the container with attribute `tlg-kaleidoscope-canvas`. 
+Control the intensity of the motion effect with `tlg-kaleidoscope-motion` attribute to the container with attribute `tlg-kaleidoscope-canvas`. 
 
 Default is 1. Larger number will increase motion intensity.
 
@@ -98,7 +98,7 @@ Default is 1. Larger number will increase motion intensity.
 |------------------------------|-----------------------------------------------------------------------------------|-------------------------------------|------------------|
 | `tlg-kaleidoscope-canvas`    | Identifies the container element for the kaleidoscope canvas. **Required**        | None                                | -                |
 | `tlg-kaleidoscope-image`     | Marks an image to be used in the kaleidoscope pattern. **Required**               | None                                | -                |
-| `tlg-kaleidoscope-mode`      | Sets the interaction mode of the kaleidoscope.                                    | "static", "mouse", "loop", "scroll" | "static"         |
+| `tlg-kaleidoscope-mode`      | Sets the animation mode of the kaleidoscope.                                      | "static", "mouse", "loop", "scroll" | "static"         |
 | `tlg-kaleidoscope-aspect`    | Adjusts the aspect ratio of the image texture.                                    | {Number} or {Ratio}                 | 1 (square)       |
 | `tlg-kaleidoscope-scale`     | Sets the scale factor of the kaleidoscope pattern.                                | {Number}                            | 1                |
 | `tlg-kaleidoscope-motion`    | Controls the intensity of the motion effect based on mouse movement.              | {Number}                            | 1                |
