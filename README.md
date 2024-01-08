@@ -8,7 +8,7 @@ Copy the `<script>` below and paste it in the `<head>` or before `</body>` tag i
 ```html
 <!-- Snippets by The Lazy God • Kaleidoscope -->
 <script defer src="https://cdn.jsdelivr.net/npm/three-js@79.0.0/three.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/gh/the-lazy-god/tlg-kaleidoscope@v1.0.0/tlg-kaleidoscope.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/gh/the-lazy-god/tlg-kaleidoscope@v2.0.0/tlg-kaleidoscope.min.js"></script>
 ``` 
 
 ## ✅ Required Setup
@@ -33,7 +33,31 @@ Within each canvas container, include one or more image elements with the attrib
 
 -   Name: `tlg-kaleidoscope-image`
 
-## 🔄 Optional Customization
+## 🌟 Interaction Customization
+
+### Choose the interaction mode
+
+Set the interaction mode of the kaleidoscope by adding the `tlg-kaleidoscope-mode` attribute to the container with attribute `tlg-kaleidoscope-canvas`. Options are "mouse", "static", "loop", and "scroll".
+
+**Attribute (Optional):**
+
+-   Name: `tlg-kaleidoscope-mode`
+-   Value: `"static"`, `"mouse"`, `"loop"`, `"scroll"` (Default = "static")
+
+## 🔄 Additional Customization
+
+### Define aspect ratio for the image texture
+
+Adjust the aspect ratio of the image texture by adding the `tlg-kaleidoscope-aspect` attribute to each image element with attribute `tlg-kaleidoscope-image`. 
+
+Apply this attribute when using non-square source images.
+
+Specify as a decimal (e.g., "1.78" for a 16/9 aspect ratio) or as a ratio (e.g., "16/9").
+
+**Attribute (Optional):**
+
+-   Name: `tlg-kaleidoscope-aspect`
+-   Value: `{number}` or `{ratio}` (e.g., "1.78" or "16/9") (Default = 1)
 
 ### Set the number of segments
 
@@ -70,11 +94,12 @@ Default is 1. Larger number will increase motion intensity. Set the value to 0 t
 
 ## 📦 Attributes overview
 
-| Name                         | Description                                                                       | Values                      | Default |
-|------------------------------|-----------------------------------------------------------------------------------|-----------------------------|---------|
-| `tlg-kaleidoscope-canvas`    | Identifies the container element for the kaleidoscope canvas. **Required**        | None                        | -       |
-| `tlg-kaleidoscope-image`     | Marks an image to be used in the kaleidoscope pattern. **Required**               | None                        | -       |
-| `tlg-kaleidoscope-scale`     | Sets the scale factor of the kaleidoscope pattern.                                | {Number}                    | 1       |
-| `tlg-kaleidoscope-motion`    | Controls the intensity of the motion effect based on mouse movement.              | {Number}                    | 1       |
-| `tlg-kaleidoscope-segments`  | Determines the number of segments in the kaleidoscope pattern.                    | {Number}                    | 6       |
-
+| Name                         | Description                                                                       | Values                              | Default          |
+|------------------------------|-----------------------------------------------------------------------------------|-------------------------------------|------------------|
+| `tlg-kaleidoscope-canvas`    | Identifies the container element for the kaleidoscope canvas. **Required**        | None                                | -                |
+| `tlg-kaleidoscope-image`     | Marks an image to be used in the kaleidoscope pattern. **Required**               | None                                | -                |
+| `tlg-kaleidoscope-mode`      | Sets the interaction mode of the kaleidoscope.                                    | "static", "mouse", "loop", "scroll" | "static"         |
+| `tlg-kaleidoscope-aspect`    | Adjusts the aspect ratio of the image texture.                                    | {Number} or {Ratio}                 | 1 (square)       |
+| `tlg-kaleidoscope-scale`     | Sets the scale factor of the kaleidoscope pattern.                                | {Number}                            | 1                |
+| `tlg-kaleidoscope-motion`    | Controls the intensity of the motion effect based on mouse movement.              | {Number}                            | 1                |
+| `tlg-kaleidoscope-segments`  | Determines the number of segments in the kaleidoscope pattern.                    | {Number}                            | 6                |
