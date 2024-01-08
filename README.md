@@ -8,7 +8,7 @@ Copy the `<script>` below and paste it in the `<head>` or before `</body>` tag i
 ```html
 <!-- Snippets by The Lazy God • Kaleidoscope -->
 <script defer src="https://cdn.jsdelivr.net/npm/three-js@79.0.0/three.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/gh/the-lazy-god/tlg-kaleidoscope@v1.0.0/tlg-kaleidoscope.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/gh/the-lazy-god/tlg-kaleidoscope@v2.0.0/tlg-kaleidoscope.min.js"></script>
 ``` 
 
 ## ✅ Required Setup
