@@ -17,7 +17,7 @@ Copy the `<script>` below and paste it in the `<head>` or before `</body>` tag i
 
 Add the attribute below to any div element you want to contain a kaleidoscope effect.
 
-**Note:** Set this element to `position:relative;` and give it the size you want the kaleidoscope canvas to be.
+**Note:** This element is automatically set to `position:relative;`. Give it the size you want the kaleidoscope canvas to be using height and width or width and aspect ratio.
 
 **Attribute:**
 
