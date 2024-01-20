@@ -55,6 +55,7 @@ gl_FragColor = color;
       this.scene = new THREE.Scene();
 
       this.container = options.dom;
+      this.container.style.position = 'relative';
       /* Attributes */
       const scaleAttr = this.container.getAttribute('tlg-kaleidoscope-scale');
       this.scaleFactor = parseFloat(scaleAttr) || 1;
