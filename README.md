@@ -1,6 +1,11 @@
 # TLG Kaleidoscope
 Create a kaleidoscope effect on your web page using the Three.js library. This script transforms images into an interactive kaleidoscope pattern with customizable segments and motion.
 
+Click below to see the setup guide video:
+
+[<img src="https://img.youtube.com/vi/SAVr1spNQSo/maxresdefault.jpg" width="50%">](https://youtu.be/SAVr1spNQSo)
+
+
 ## 🔗 Snippet
 
 Copy the `<script>` below and paste it in the `<head>` or before `</body>` tag in your project on the pages where you need it. It also works with any newer version of three.js.
